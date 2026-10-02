@@ -20,6 +20,9 @@ const TARGETS = {
   'darwin-arm64': { file: `${VER}-macosx_aarch64.tar.gz`, kind: 'tar' },
   'darwin-x64': { file: `${VER}-macosx_x64.tar.gz`, kind: 'tar' },
   'win32-x64': { file: `${VER}-win_x64.zip`, kind: 'zip' },
+  // Windows ARM64 용 Java 8 은 어느 배포처(Azul·BellSoft·Adoptium)에도 없다 → x64 JRE 를 넣고
+  // Windows 11 ARM 의 x64 에뮬레이션으로 실행한다 (네이티브 ARM64 는 Java 11+ 부터만 있음)
+  'win32-arm64': { file: `${VER}-win_x64.zip`, kind: 'zip' },
   'linux-x64': { file: `${VER}-linux_x64.tar.gz`, kind: 'tar' },
   'linux-arm64': { file: `${VER}-linux_aarch64.tar.gz`, kind: 'tar' }
 }
