@@ -1,7 +1,7 @@
 {
   "name": "pepe-zip",
   "productName": "PePe Zip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Windows·macOS·Linux 크로스 플랫폼 압축 프로그램 (7-Zip 엔진)",
   "main": "out/main/index.js",
   "author": "codeclaude",
